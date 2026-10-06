@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: freelance_mention
+    description: "Missions freelance détectées sur LinkedIn par Freelance Mention, chargées par MERGE (1 ligne = 1 post)."
+    database: FREELANCE_DATA
+    schema: PUBLIC
+    tables:
+      - name: freelance_missions
+        identifier: FREELANCE_MISSIONS
+        description: "Table brute. Seule RAW_PAYLOAD fait foi ; les colonnes STACKS / SENIORITE / SECTEUR saisies à la main ne sont pas utilisées."
+        loaded_at_field: INGESTED_AT
+        freshness:
+          warn_after: {count: 2, period: day}
+          error_after: {count: 7, period: day}
+        columns:
+          - name: POST_URL
+            tests: [unique, not_null]
+          - name: RAW_PAYLOAD
+            tests: [not_null]

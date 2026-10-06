@@ -1,0 +1,5 @@
+work_mode_brut,libelle,ordre
+onsite,Présentiel,1
+hybrid,Hybride,2
+remote,Remote,3
+unknown,Non précisé,4

@@ -1,0 +1,43 @@
+pattern,stack,famille
+power ?bi,Power BI,BI / Dataviz
+qlik ?sense|qlikview|qlik,Qlik,BI / Dataviz
+tableau,Tableau,BI / Dataviz
+looker|lookml|looker studio,Looker,BI / Dataviz
+microstrategy,MicroStrategy,BI / Dataviz
+sap bo|business objects,SAP BO,BI / Dataviz
+dax|power query,DAX / Power Query,BI / Dataviz
+snowflake,Snowflake,Data platform
+bigquery,BigQuery,Data platform
+databricks,Databricks,Data platform
+microsoft fabric|fabric,Microsoft Fabric,Data platform
+dataiku,Dataiku,Data platform
+dbt,dbt,Data engineering
+airflow,Airflow,Data engineering
+spark|pyspark,Spark,Data engineering
+talend,Talend,Data engineering
+semarchy,Semarchy,Data engineering
+kafka,Kafka,Data engineering
+data factory|adf,Azure Data Factory,Data engineering
+hadoop|hive|hbase,Hadoop,Data engineering
+etl,ETL,Data engineering
+sql server,SQL Server,Bases de données
+postgres|postgresql,PostgreSQL,Bases de données
+oracle,Oracle,Bases de données
+pl/?sql,PL/SQL,Bases de données
+sql,SQL,Bases de données
+mdm|master data,MDM,Gouvernance / Qualité
+data catalog|collibra|openmetadata,Data Catalog,Gouvernance / Qualité
+great expectations|soda,Data Quality tools,Gouvernance / Qualité
+python,Python,Langages
+java,Java,Langages
+scala,Scala,Langages
+machine learning|mlops|mlflow,Machine Learning,IA / Data science
+llm|ia generative|genai|rag|agents? ia|agentique,IA générative,IA / Data science
+aws,AWS,Cloud
+azure,Azure,Cloud
+gcp|google cloud,GCP,Cloud
+kubernetes|k8s,Kubernetes,DevOps
+docker,Docker,DevOps
+terraform,Terraform,DevOps
+ci/cd|github actions|gitlab|jenkins,CI/CD,DevOps
+agile|scrum|safe,Agile / Scrum,Méthodes

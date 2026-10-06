@@ -1,0 +1,22 @@
+version: 2
+
+seeds:
+  - name: ref_type_travail
+    description: "work_mode Freelance Mention -> libellé + ordre de tri."
+    columns:
+      - name: work_mode_brut
+        tests: [unique, not_null]
+  - name: ref_seniorite
+    description: "Niveaux de séniorité, ordre de tri et tranches d'années d'XP."
+    columns:
+      - name: libelle
+        tests: [unique, not_null]
+  - name: ref_ville_region
+    description: "Ville normalisée (sans accents, minuscules) -> ville, région, pays."
+    columns:
+      - name: ville_norm
+        tests: [unique, not_null]
+  - name: ref_metier
+    description: "Dictionnaire regex -> métier (utilisé à l'étape 2)."
+  - name: ref_stack
+    description: "Dictionnaire regex -> stack + famille (utilisé à l'étape 2)."

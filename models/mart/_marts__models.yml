@@ -1,0 +1,56 @@
+version: 2
+
+models:
+  - name: fct_missions
+    description: "Fait mission. Grain : 1 post LinkedIn détecté par Freelance Mention."
+    columns:
+      - name: mission_id
+        tests: [unique, not_null]
+      - name: date_id
+        tests:
+          - not_null
+          - relationships: {to: ref('dim_date'), field: date_id}
+      - name: localisation_id
+        tests:
+          - not_null
+          - relationships: {to: ref('dim_localisation'), field: localisation_id}
+      - name: type_travail_id
+        tests:
+          - not_null
+          - relationships: {to: ref('dim_type_travail'), field: type_travail_id}
+      - name: seniorite_id
+        tests:
+          - not_null
+          - relationships: {to: ref('dim_seniorite'), field: seniorite_id}
+
+  - name: dim_date
+    columns:
+      - name: date_id
+        tests: [unique, not_null]
+
+  - name: dim_localisation
+    columns:
+      - name: localisation_id
+        tests: [unique, not_null]
+      - name: est_referencee
+        description: "false = ville inconnue du seed ref_ville_region."
+        tests:
+          - accepted_values:
+              values: [true]
+              quote: false
+              config:
+                severity: warn
+
+  - name: dim_type_travail
+    columns:
+      - name: type_travail_id
+        tests: [unique, not_null]
+
+  - name: dim_seniorite
+    columns:
+      - name: seniorite_id
+        tests: [unique, not_null]
+      - name: seniorite
+        tests:
+          - accepted_values:
+              values: ['Junior', 'Confirmé', 'Senior', 'Expert / Lead', 'Non précisé']

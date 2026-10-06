@@ -1,0 +1,6 @@
+libelle,ordre,annees_min,annees_max
+Junior,1,0,2
+Confirmé,2,3,4
+Senior,3,5,7
+Expert / Lead,4,8,99
+Non précisé,5,,

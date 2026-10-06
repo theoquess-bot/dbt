@@ -1,0 +1,21 @@
+priorite,pattern,metier,famille
+10,data analyst|analyste (de )?donnees|analytics engineer,Data Analyst / Analytics Engineer,Data / BI
+11,consultant bi|business intelligence|power ?bi|qlik|looker|tableau|microstrategy|dataviz|bi,Consultant BI,Data / BI
+12,data engineer|ingenieur (de )?donnees|data platform engineer|big data|etl|talend|databricks,Data Engineer,Data / BI
+13,data scientist|machine learning|ml engineer,Data Scientist / ML,Data / BI
+14,architecte (big )?data|data architect|data & cloud architect,Architecte Data,Data / BI
+15,dba,DBA,Data / BI
+16,mdm|master data|gouvernance (des )?donnees|data quality|qualite (des )?donnees|data governance,Gouvernance / Qualité de données,Data / BI
+17,manager equipe data|lead data|head of data|delivery director,Management Data,Data / BI
+20,architecte ia|ia|ai|llm|genai,IA / GenAI,IA
+30,business( ?(&|et|and|/) ?[a-z]+)? analyst|analyste (metier|fonctionnel),Business Analyst,Fonctionnel
+31,moa|amoa,MOA / AMOA,Fonctionnel
+40,product owner|po,Product Owner,Projet / Produit
+41,product manager,Product Manager,Projet / Produit
+42,chef de projet|project manager|pmo,Chef de projet / PMO,Projet / Produit
+50,devops|sre|cloud|kubernetes,DevOps / Cloud,Infra / Cloud
+51,vmware|systeme|reseau|exploitation,Infra / Exploitation,Infra / Cloud
+60,developpeur|developer|full ?stack|java|[.]net|php|python|tech lead,Développeur,Développement
+70,cybersecurite|soc|iam|pentest|rssi,Cybersécurité,Cybersécurité
+80,sap|salesforce|servicenow|oracle otm|itop|itsm,ERP / Progiciels,Progiciels
+90,test|qa|recette,Test / QA,Test / QA

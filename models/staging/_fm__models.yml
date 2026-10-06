@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_fm__missions
+    description: "Missions Freelance Mention typées depuis RAW_PAYLOAD. Grain : 1 post."
+    columns:
+      - name: mission_id
+        description: "Id Freelance Mention (1 id par post, pas par mission réelle)."
+        tests: [unique, not_null]
+      - name: post_url
+        tests: [unique, not_null]
+      - name: work_mode_brut
+        tests:
+          - accepted_values:
+              values: ['onsite', 'hybrid', 'remote', 'unknown']
+      - name: detected_at_utc
+        tests: [not_null]
